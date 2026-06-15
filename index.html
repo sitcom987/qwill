@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Q|will — AI-driven. Human headed. Creative systems for brands that want relevance, clarity, and cultural momentum.">
+  <title>Q|will — AI-driven. Human headed.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ── CURSORS ── -->
+<div class="c-dot"  id="cDot"></div>
+<div class="c-ring" id="cRing"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Q<span class="bar">|</span>will</a>
+  <ul class="nav-links">
+    <li><a href="#intro">Rólunk</a></li>
+    <li><a href="#services">Szolgálatások</a></li>
+    <li><a href="#clients">Ügyfelek</a></li>
+    <li><a href="#contact" class="nav-pill">Kapcsolat</a></li>
+  </ul>
+  <button class="nav-hamburger" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Navigation">
+  <a href="#intro"    id="mn-about">Rólunk</a>
+  <a href="#services" id="mn-svc">Szolgáltatások</a>
+  <a href="#clients"  id="mn-cli">Ügyfelek</a>
+  <a href="#contact"  id="mn-cnt">Kapcsolat</a>
+</div>
+
+<!-- ═══════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-blobs" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+  </div>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Creative Intelligence Studio</p>
+
+    <h1 class="hero-headline">
+      <span class="h-line"><span>AI-driven.</span></span>
+      <span class="h-line"><span>Human <span class="dim-word">headed.</span></span></span>
+    </h1>
+
+    <p class="hero-sub-line">A jó történet <strong>jó stratégia</strong></p>
+    <p class="hero-body">Olyan kommunikációs, reklám- és PR-kampányokat tervezünk, amelyek áttörik a zajt. Erre csak olyan történetek képesek, amelyek emberiek, őszinték és hitelesek. A Qwillnél ilyeneket alkotunk.</p>
+
+    <div class="hero-actions">
+      <a href="#services" class="btn-fill">
+        Szolgáltatásaink
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Kapcsolat</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span class="scroll-cue-label">Scroll</span>
+    <div class="scroll-cue-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     INTRO
+════════════════════════════════════ -->
+<section id="intro">
+  <div class="wrap">
+    <div class="s-label reveal"><span>01</span> A Q|will-ről</div>
+
+    <div class="intro-grid">
+      <div class="intro-sticky">
+        <h2 class="intro-heading reveal">
+          Intelligence<br>meets <span class="muted">craft.</span>
+        </h2>
+        <p class="intro-body reveal rd1">
+          A Qwill a technológia korának <strong>emberi ügynöksége</strong>.
+        </p>
+        <p class="intro-body reveal rd2">
+          Olyan csapat vagyunk, amely maximálisan kihasználja a <strong> digitális megoldások</strong> erejét, de a kommunikáció alapjának továbbra is az embert, a hitelességet és a megismételhetetlen történeteket tekinti.
+        </p>
+        <a href="#services" class="inline-link reveal rd3">
+          Nézd meg a szolgáltatásainkat
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="pillar-list">
+        <div class="pillar reveal">
+          <span class="p-num">01</span>
+          <div>
+            <h3 class="p-title">Kommunikáció</h3>
+            <p class="p-body">A történet alapja. Átfogó stratégia és pozicionálás, amely keretet ad márkád hangjának. Nem ad-hoc üzenetek összessége, hanem tudatosan felépített narratíva, ami meghatározza a hiteles jelenlétet.</p>
+          </div>
+        </div>
+        <div class="pillar reveal rd1">
+          <span class="p-num">02</span>
+          <div>
+            <h3 class="p-title">Reklám</h3>
+            <p class="p-body">A zaj áttörése. Kreatív koncepciók és kampányok, amelyek egyenesen a narratívádból következnek, és képesek kialakítani azt az érzelmi kapcsolódást, bevonódást, amire csak az igazán jó történetek képesek.</p>
+          </div>
+        </div>
+        <div class="pillar reveal rd2">
+          <span class="p-num">03</span>
+          <div>
+            <h3 class="p-title">PR</h3>
+            <p class="p-body">A hitelesség záloga. A saját csatornákon történő kommunikáció mellett a médiában és a szakmai fórumokon való jelenlét teremti meg a márka mögötti racionális meggyőzés dimenzióját.</p>
+          </div>
+        </div>
+        <div class="pillar reveal rd3">
+          <span class="p-num">04</span>
+          <div>
+            <h3 class="p-title">Design Systems</h3>
+            <p class="p-body">Coherent, scalable visual identities built on solid foundations. Design that works across every surface, every context.</p>
+          </div>
+        </div>
+        <div class="pillar reveal rd4">
+          <span class="p-num">05</span>
+          <div>
+            <h3 class="p-title">Cultural Awareness</h3>
+            <p class="p-body">Deep immersion in culture — trends, movements, and moments that matter. We keep brands relevant, not reactive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     SERVICES
+════════════════════════════════════ -->
+<section id="services">
+  <div class="wrap">
+    <div class="s-label reveal"><span>02</span> Szolgáltatásaink</div>
+
+    <div class="services-hdr">
+      <h2 class="services-h2 reveal">Miket <br>alkotunk?</h2>
+      <p class="services-desc reveal rd1">Four core disciplines, each powered by our AI-human collaboration model. Engineered for impact. Crafted for longevity.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Editorial Content -->
+      <div class="svc reveal">
+        <div class="svc-top">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h10M4 18h7"/></svg>
+          </div>
+          <span class="svc-n">01</span>
+        </div>
+        <h3 class="svc-title">Editorial Content</h3>
+        <p class="svc-body">Editorial systems designed for relevance, discoverability, and cultural positioning. Long-form, short-form, and everything in between — built for modern attention spans and platform-native distribution.</p>
+        <div class="svc-tags">
+          <span class="tag">Strategy</span>
+          <span class="tag">Copywriting</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Social</span>
+        </div>
+        <div class="svc-cta">
+          Learn more
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <!-- Video Production -->
+      <div class="svc reveal rd1">
+        <div class="svc-top">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <span class="svc-n">02</span>
+        </div>
+        <h3 class="svc-title">Video Production</h3>
+        <p class="svc-body">Cinematic storytelling accelerated by AI post-production. From concept to cut, we deliver visual narratives that capture attention, communicate value, and move people to act.</p>
+        <div class="svc-tags">
+          <span class="tag">Direction</span>
+          <span class="tag">Editing</span>
+          <span class="tag">Motion</span>
+          <span class="tag">AI Post</span>
+        </div>
+        <div class="svc-cta">
+          Learn more
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <!-- Websites -->
+      <div class="svc reveal rd2">
+        <div class="svc-top">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <span class="svc-n">03</span>
+        </div>
+        <h3 class="svc-title">Websites</h3>
+        <p class="svc-body">Digital experiences engineered for conversion and crafted for culture. Performance-first architecture with editorial design sensibility — websites that work as hard as they look.</p>
+        <div class="svc-tags">
+          <span class="tag">Design</span>
+          <span class="tag">Development</span>
+          <span class="tag">UX</span>
+          <span class="tag">CRO</span>
+        </div>
+        <div class="svc-cta">
+          Learn more
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+
+      <!-- Branding -->
+      <div class="svc reveal rd3">
+        <div class="svc-top">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+          </div>
+          <span class="svc-n">04</span>
+        </div>
+        <h3 class="svc-title">Branding</h3>
+        <p class="svc-body">Identity systems with the depth to survive cultural cycles. We build brands that are immediately recognisable, infinitely adaptable, and strategically positioned for the long game.</p>
+        <div class="svc-tags">
+          <span class="tag">Identity</span>
+          <span class="tag">Systems</span>
+          <span class="tag">Guidelines</span>
+          <span class="tag">Naming</span>
+        </div>
+        <div class="svc-cta">
+          Learn more
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CLIENTS
+════════════════════════════════════ -->
+<section id="clients">
+  <div class="clients-hdr wrap">
+    <div class="s-label reveal"><span>03</span> Ügyfeleink</div>
+    <h2 class="clients-h2 reveal">Trusted by brands<br>that move forward.</h2>
+    <p class="clients-sub reveal rd1">Built for modern brands, artists, and forward-thinking companies ready to operate at the intersection of culture and technology.</p>
+  </div>
+
+  <div class="marquee-outer reveal" aria-hidden="true">
+    <div class="marquee-track" id="mTrack">
+      <div class="c-logo"><span>Meridian</span></div>
+      <div class="c-logo"><span>Flux Studio</span></div>
+      <div class="c-logo"><span>Arcana</span></div>
+      <div class="c-logo"><span>Velox</span></div>
+      <div class="c-logo"><span>Nomad Co.</span></div>
+      <div class="c-logo"><span>Ovid</span></div>
+      <div class="c-logo"><span>Sable</span></div>
+      <div class="c-logo"><span>Atelier Nord</span></div>
+      <div class="c-logo"><span>Kinetica</span></div>
+      <div class="c-logo"><span>Axiom</span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="c-logo"><span>Meridian</span></div>
+      <div class="c-logo"><span>Flux Studio</span></div>
+      <div class="c-logo"><span>Arcana</span></div>
+      <div class="c-logo"><span>Velox</span></div>
+      <div class="c-logo"><span>Nomad Co.</span></div>
+      <div class="c-logo"><span>Ovid</span></div>
+      <div class="c-logo"><span>Sable</span></div>
+      <div class="c-logo"><span>Atelier Nord</span></div>
+      <div class="c-logo"><span>Kinetica</span></div>
+      <div class="c-logo"><span>Axiom</span></div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat reveal"    data-target="120" data-suffix="+">
+      <div class="stat-n">120+</div>
+      <div class="stat-l">Brands Served</div>
+    </div>
+    <div class="stat reveal rd1" data-target="4"   data-suffix="×">
+      <div class="stat-n">4×</div>
+      <div class="stat-l">Faster Delivery</div>
+    </div>
+    <div class="stat reveal rd2" data-target="98"  data-suffix="%">
+      <div class="stat-n">98%</div>
+      <div class="stat-l">Client Retention</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOUNDERS
+════════════════════════════════════ -->
+<section id="founders">
+  <div class="wrap">
+    <div class="s-label reveal"><span>04</span> Alapítók</div>
+
+    <div class="founders-hdr">
+      <h2 class="founders-h2 reveal">Az emberek<br>a gép <span class="founders-dim">mögött.</span></h2>
+      <p class="founders-sub reveal rd1">Két különböző háttér, egy közös meggyőződés: a kommunikáció akkor működik igazán, ha egyszerre okos és emberi.</p>
+    </div>
+
+    <div class="founders-grid">
+
+      <!-- Founder 1 -->
+      <article class="founder-card reveal">
+        <div class="founder-photo" aria-hidden="true">
+          <span class="founder-initials">BA</span>
+          <div class="founder-photo-lines" aria-hidden="true"></div>
+        </div>
+        <div class="founder-info">
+          <div class="founder-meta">
+            <h3 class="founder-name">Balázs Attila</h3>
+            <span class="founder-role">Társalapító &amp; Kreatív Igazgató</span>
+          </div>
+          <p class="founder-bio">Bár eredetileg nyelvésznek készültem, a teljes szakmai utamat a magyar média és az ügynökségi világ alakította. Újságírói múlttal, digitális tapasztalattal és kreatív vezetői háttérrel a hátam mögött pontosan ismerem a média, az ügyfelek és az ügynökségek elvárásait. Stratégaként mindig is e három világ egyensúlyának megteremtését tartottam a legsikeresebb útnak. Azért alapítottam a Qwillt, mert a valóban minőségi tartalom ma hiánycikk a piacon, és mi pontosan erre kínálunk megoldást.</p>
+          <a href="https://www.linkedin.com/in/attila-balazs/" target="_blank" rel="noopener noreferrer" class="founder-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn profil
+          </a>
+        </div>
+      </article>
+
+      <!-- Founder 2 -->
+      <article class="founder-card reveal rd2">
+        <div class="founder-photo" aria-hidden="true">
+          <span class="founder-initials">SzÁ</span>
+          <div class="founder-photo-lines" aria-hidden="true"></div>
+        </div>
+        <div class="founder-info">
+          <div class="founder-meta">
+            <h3 class="founder-name">Szklenár Ádám</h3>
+            <span class="founder-role">Társalapító &amp; Kreatív Igazgató</span>
+          </div>
+          <p class="founder-bio">Andragógia alapszakon, Kommunikáció mesterszakon végeztem, azóta a digitális médiában dolgozom. Karrieremben nagy fordulópont volt az 5 év, amit Londonban töltöttem, ahol zeneművészeti diplomát szereztem, miközben marketingesként egy nemzetközi luxusmárkának voltam a marketingese. A <strong><a href="https://unicornbookclub.hu/" target="_blank">Unicorn Book Club</a></strong> alapítójaként progesszív gondolatokat szeretnék terjeszteni, amik a technológia, üzlet, pszichológia, kreativitás és fejlődés témáit járják körül.</p>
+          <a href="https://www.linkedin.com/in/adam-szklenar-ba8b422b/" target="_blank" rel="noopener noreferrer" class="founder-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn profil
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CONTACT
+════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-blobs" aria-hidden="true">
+    <div class="c-blob c-blob-a"></div>
+    <div class="c-blob c-blob-b"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="s-label reveal"><span>05</span> Kapcsolat</div>
+
+    <div class="contact-grid">
+      <div>
+        <h2 class="contact-h2 reveal">
+          Let's build<br>something<br><span class="dim">intelligent.</span>
+        </h2>
+        <p class="contact-copy reveal rd1">Nem beszállítót keresel, hanem stratégiai agyat?
+          <br><br>
+          Ha hiszel az emberi, hiteles történetek erejében, és olyan kampányokat szeretnél, amelyek nemcsak látványosak, de racionálisan is meggyőzőek, a Qwillnél jó helyen jársz.
+          <br><br>
+          Írd meg a céljaidat, és igyunk meg együtt egy kávét!
+        </p>
+        <div class="contact-meta reveal rd2">
+          <div class="meta-item">
+            <span class="meta-label">Email</span>
+            <span class="meta-val">hello@qwill.co</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Based in</span>
+            <span class="meta-val">Global — Remote First</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Follow</span>
+            <div class="social-row">
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">X / Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="form reveal rd1" id="contactForm" novalidate>
+        <div class="form-row">
+          <input type="text"  name="name"    placeholder="Your name"       autocomplete="name">
+          <input type="email" name="email"   placeholder="Email address"   autocomplete="email">
+        </div>
+        <input    type="text"  name="company" placeholder="Company or project" autocomplete="organization">
+        <textarea name="message" rows="5"    placeholder="Tell us about your project…"></textarea>
+        <button type="submit" class="btn-send" id="sendBtn">
+          Send Message
+          <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Q<span class="bar">|</span>will</div>
+    <ul class="footer-nav">
+      <li><a href="#intro">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#clients">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Q|will. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ── CUSTOM CURSOR ── */
+const cDot  = document.getElementById('cDot');
+const cRing = document.getElementById('cRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+if (window.innerWidth > 768) {
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cDot.style.left = mx + 'px';
+    cDot.style.top  = my + 'px';
+  });
+
+  (function raf() {
+    rx += (mx - rx) * 0.11;
+    ry += (my - ry) * 0.11;
+    cRing.style.left = rx + 'px';
+    cRing.style.top  = ry + 'px';
+    requestAnimationFrame(raf);
+  })();
+
+  document.querySelectorAll('a, button, .svc, .pillar, .c-logo').forEach(el => {
+    el.addEventListener('mouseenter', () => cRing.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cRing.classList.remove('hover'));
+  });
+
+  document.addEventListener('mouseleave', () => { cDot.style.opacity = '0'; cRing.style.opacity = '0'; });
+  document.addEventListener('mouseenter', () => { cDot.style.opacity = '1'; cRing.style.opacity = '1'; });
+}
+
+/* ── NAV SCROLL STATE ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+/* ── MOBILE MENU ── */
+const menuBtn  = document.getElementById('menuBtn');
+const mobileNav = document.getElementById('mobileNav');
+let menuOpen = false;
+
+function toggleMenu(force) {
+  menuOpen = force !== undefined ? force : !menuOpen;
+  mobileNav.classList.toggle('open', menuOpen);
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
+  menuBtn.setAttribute('aria-expanded', menuOpen);
+  const [s1,s2,s3] = menuBtn.querySelectorAll('span');
+  if (menuOpen) {
+    s1.style.transform = 'translateY(6px) rotate(45deg)';
+    s2.style.opacity   = '0';
+    s3.style.transform = 'translateY(-6px) rotate(-45deg)';
+  } else {
+    s1.style.transform = s3.style.transform = '';
+    s2.style.opacity = '';
+  }
+}
+
+menuBtn.addEventListener('click', () => toggleMenu());
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+/* ── SCROLL REVEAL ── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ── HERO CANVAS — ambient particles + mesh ── */
+const canvas = document.getElementById('hero-canvas');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas, { passive: true });
+
+class Particle {
+  constructor() { this.init(); }
+  init() {
+    this.x  = Math.random() * canvas.width;
+    this.y  = Math.random() * canvas.height;
+    this.vx = (Math.random() - 0.5) * 0.28;
+    this.vy = (Math.random() - 0.5) * 0.28;
+    this.life    = Math.random() * 300;
+    this.maxLife = 200 + Math.random() * 220;
+    this.r = 0.8 + Math.random() * 1.3;
+  }
+  get alpha() {
+    const p = (this.life % this.maxLife) / this.maxLife;
+    if (p < 0.18) return (p / 0.18) * 0.13;
+    if (p > 0.82) return ((1 - p) / 0.18) * 0.13;
+    return 0.13;
+  }
+  tick() {
+    this.x += this.vx; this.y += this.vy;
+    this.life++;
+    if (this.life > this.maxLife) this.init();
+  }
+  draw() {
+    ctx.globalAlpha = this.alpha;
+    ctx.fillStyle   = '#1A1A18';
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+const PARTICLE_COUNT = window.innerWidth < 768 ? 30 : 55;
+const pts = Array.from({ length: PARTICLE_COUNT }, () => new Particle());
+
+function drawMesh() {
+  const MAX = 110;
+  for (let i = 0; i < pts.length; i++) {
+    for (let j = i + 1; j < pts.length; j++) {
+      const dx = pts[i].x - pts[j].x;
+      const dy = pts[i].y - pts[j].y;
+      const d  = Math.sqrt(dx * dx + dy * dy);
+      if (d < MAX) {
+        ctx.globalAlpha = (1 - d / MAX) * 0.045;
+        ctx.strokeStyle = '#1A1A18';
+        ctx.lineWidth   = 0.5;
+        ctx.beginPath();
+        ctx.moveTo(pts[i].x, pts[i].y);
+        ctx.lineTo(pts[j].x, pts[j].y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+(function render() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  pts.forEach(p => { p.tick(); p.draw(); });
+  drawMesh();
+  ctx.globalAlpha = 1;
+  requestAnimationFrame(render);
+})();
+
+/* ── HERO PARALLAX ── */
+const heroInner = document.querySelector('.hero-inner');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  if (y < window.innerHeight && heroInner) {
+    heroInner.style.transform = `translateY(${y * 0.28}px)`;
+    heroInner.style.opacity   = Math.max(0, 1 - (y / window.innerHeight) * 1.6);
+  }
+}, { passive: true });
+
+/* ── MAGNETIC BUTTONS ── */
+if (window.innerWidth > 768) {
+  document.querySelectorAll('.btn-fill, .btn-ghost, .btn-send, .nav-pill').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width  / 2) * 0.18;
+      const y = (e.clientY - r.top  - r.height / 2) * 0.18;
+      btn.style.transform = `translate(${x}px,${y}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transition = 'transform .55s cubic-bezier(0.16,1,0.3,1)';
+      btn.style.transform  = '';
+      setTimeout(() => { btn.style.transition = ''; }, 600);
+    });
+  });
+}
+
+/* ── COUNTER ANIMATION ── */
+function countUp(el, to, suffix, dur = 1400) {
+  let start = null;
+  function step(ts) {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / dur, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(e * to) + suffix;
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+const statsIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el     = e.target.querySelector('.stat-n');
+      const target = +e.target.dataset.target;
+      const suffix = e.target.dataset.suffix;
+      if (el && target && !el.dataset.done) {
+        el.dataset.done = '1';
+        countUp(el, target, suffix);
+      }
+      statsIO.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat').forEach(el => statsIO.observe(el));
+
+/* ── CONTACT FORM ── */
+const form    = document.getElementById('contactForm');
+const sendBtn = document.getElementById('sendBtn');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  sendBtn.innerHTML = 'Message Sent ✓';
+  sendBtn.style.background = 'rgba(255,255,255,.75)';
+  sendBtn.disabled = true;
+  setTimeout(() => {
+    sendBtn.innerHTML = `Send Message <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M7 17L17 7M7 7h10v10"/></svg>`;
+    sendBtn.style.background = '';
+    sendBtn.disabled = false;
+    form.reset();
+  }, 3500);
+});
+
+/* ── SMOOTH NAV ANCHOR ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
